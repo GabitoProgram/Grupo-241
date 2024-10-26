@@ -2,7 +2,7 @@
   "name": "empresa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http:/GabitoProgram.github.io/Grupo-241",
+  "homepage": "https:/GabitoProgram.github.io/Grupo-241",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
