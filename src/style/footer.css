@@ -1,0 +1,44 @@
+.footer {
+    background: #34495e; /* Color de fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    position: fixed; /* Fijar el footer */
+    bottom: 0; /* Asegura que esté en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+  }
+  
+  .names-list {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina márgenes */
+    font-size: 1.2rem; /* Tamaño de fuente para los nombres */
+    font-weight: bold; /* Hacer los nombres en negrita */
+  }
+  
+  .names-list li {
+    margin: 5px 0; /* Espacio entre los nombres */
+  }
+  
+  /* Estilos para los iconos de redes sociales */
+  .social-icons {
+    margin-top: 20px; /* Espacio superior para los iconos */
+  }
+  
+  .social-icons a {
+    color: #ffffff; /* Color blanco para los iconos */
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espacio entre iconos */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al hacer hover */
+  }
+  
