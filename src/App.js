@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import logo from './imagenes/logo.png';
 import './App.css';
 import AE from './componentes/AE';
@@ -7,7 +7,6 @@ import Orientado from './componentes/orientado';
 import MT from './componentes/MT';
 import VI from './componentes/VI';
 import Footer from './componentes/footer';
-
 
 function Home() {
   return (
@@ -17,7 +16,6 @@ function Home() {
     </div>
   );
 }
-
 
 function App() {
   return (
@@ -31,9 +29,9 @@ function App() {
               <ul className="nav-menu">
                 <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/AE">AE</Link></li>
-                <li><a href="/Orientado">OO</a></li>
-                <li><a href="/MT">MT</a></li>
-                <li><a href="/VI">VI</a></li>
+                <li><Link to="/Orientado">OO</Link></li>
+                <li><Link to="/MT">MT</Link></li>
+                <li><Link to="/VI">VI</Link></li>
               </ul>
             </nav>
           </div>
@@ -41,11 +39,11 @@ function App() {
 
         {/* Contenido de las rutas */}
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Página de Inicio */}
-          <Route path="/AE" element={<AE />} /> {/* Página de AE */}
-          <Route path="/Orientado" element={<Orientado />} /> {/* Página de OO */}
-          <Route path="/MT" element={<MT />} /> {/* Página de MT */}
-          <Route path="/VI" element={<VI />} /> {/* Página de VI */}
+          <Route path="/" element={<Home />} />
+          <Route path="/AE" element={<AE />} />
+          <Route path="/Orientado" element={<Orientado />} />
+          <Route path="/MT" element={<MT />} />
+          <Route path="/VI" element={<VI />} />
         </Routes>
 
         <Footer />
